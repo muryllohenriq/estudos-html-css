@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif; /*quando é duas palavras tem q colocar entre aspas. Utilizar mais de uma, caso um despositivo não tenha a primeira, ele tentará a segunda... = safe combination */
+            font-size: 1em ; 
+            /* Medidas Absolutas: cm, mm, in, px, pt, pc
+               Medidas Relativas: em, ex, rem, vw, vh, %
+               A w3c recomenda o uso da px e da em.*/
+            /* tamanho natural da fonte é 16px. 16px geralmente = 1em */
+            font-weight: bolder;
+            font-style: italic;
+            text-decoration: underline;
+            /* A família de fonte escolhida para o site tem que possibilitar essas 3 configurações.*/
+        }
+
+        h1 {
+          /*font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */
+            font: italic bolder 3em 'Work Sans', sans-serif; /* shorthand font
+            - font-style -> font-variant -> font-weight -> font-size/line-height -> font-family
+            */
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae tenetur autem, sed in reprehenderit delectus laborum, et voluptatibus praesentium omnis. Esse error doloribus autem sunt, veniam totam. Minus, voluptatum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, vitae temporibus? Sit tempora dicta eum asperiores perferendis perspiciatis quam delectus dignissimos, quia placeat ea laborum accusantium ex quod reiciendis magni!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta qui illum labore maxime repellat eius provident impedit voluptates nulla? Repellat doloremque aperiam explicabo est, delectus fuga obcaecati sequi quae magni!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia saepe fugiat eum aliquid itaque ex optio, error quis consectetur consequatur dolorum? Exercitationem non laudantium excepturi totam necessitatibus alias quae! Iste?</p>
+</body>
+</html>

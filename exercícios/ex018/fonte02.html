@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'horror';
+            src: url('fonts/MB-Thin_Worms.ttf') format('truetype'); /* Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advabced Typography)
+            - svg 
+            colocar otf e ttf, geralmente todos os navegadores funcionam com esses dois formatos. */
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: horror, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        h1 {
+            font-family: horror, Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde reiciendis autem, culpa tenetur placeat molestias, totam ducimus consequatur laborum obcaecati, nulla quae asperiores assumenda voluptatem quod fuga consequuntur quia quibusdam.</p>
+</body>
+</html>

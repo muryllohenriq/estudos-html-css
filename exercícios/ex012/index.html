@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    
+    <video width="560" poster="imagens/screenshot_2.png" controls autoplay loop>
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mp4" type="video/mp4"> 
+        <!--coloque em ordem crescente de tamanho. a ordem tem influência-->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        <!--MP4,M4V,WEBM,OGV são formatos mais suportados de vídeos-->
+        <!--vídeos hospedados dessa maneira podem e vão consumir muitos dados, o que vai pesar no bolso do cliente que está pagando pela hospedagem.-->  
+    </video>
+    
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--assim o cliente não está consumindo seus dados, ele está consumindo dados do youtube.-->
+    <!--caso vá upar o vídeo, m4v é o formato mais recomendodado, mas também pode ser um daqueles ali em cima-->
+    <!--caso for um vídeo pago, utilizar vimeo, evita a pirataria. é muito bom porém é pesado, pode travar-->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--a ordem dos "source" importa-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture> <!--Bounce rate is the percentage of site visits that are single-page sessions, with the visitor leaving without viewing a second page.-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop> <!--"preload="auto"" carrega o áudio inteiro junto com o site, não recomendado pois é muito pesado-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a> <!--caso o áudio não carregue-->
+        </p>
+    </audio>
+    <!-- <audio src="midia/happy-mistake.mp3" controls autoplay></audio> -->
+    <!--MP3, WAV, OGG formatos compatíveis. caso tenha mais de um, tentará carregar de forma hierárquica. tentar evitar arquivo WAV, muito pesado-->
+</body>
+</html>

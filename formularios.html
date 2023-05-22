@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <header><h1>Formulários</h1></header>
+    <hr>
+    <br>
+    <main>
+        <form action="" method="">
+            <div>
+                <label for="texto">Segredo:</label> <!-- for="" referencia o id do input-->
+                <input type="text" id="texto" name="segredo" placeholder="escreva algo...">
+            </div>
+            <br>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+            <br>
+            <div>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+            </div>
+            <br>
+            <div>
+                <label for="hora">Horário:</label>
+                <input type="time" name="hora" id="hora">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar"> <!-- chama o "action" e o "method"-->
+            </div>
+            <br>
+            <div>
+                <select name="select" id="selecionador">
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="dado1">dado1</option>
+                    <option value="dado2">dado2</option>
+                </select>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

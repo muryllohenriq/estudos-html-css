@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #818274, #A3AB78);
+    background-image: linear-gradient(to right, #818274, #A3AB78); /*pode por angulo ou direção: 45deg ou to bottom, to top... e também pode por outras configurações: linear, radial...*/
 }
 
 main {

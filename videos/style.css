@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+a {
+    color: #ffffff;
+}
+
+body {          
+    background: rgba(0, 0, 0, 0.822);
+    color: rgba(255, 255, 255, 0.904);
+    font-size: 1.5rem; /* rem respeita o :root */
+}
+
+main {
+    text-align: center;   
+}
+
+#image {
+    height: 300px;
+    background: url(https://images.unsplash.com/photo-1656925313430-a5efd3e6d754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
